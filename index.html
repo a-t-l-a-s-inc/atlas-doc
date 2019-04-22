@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://www.google.com"></script>
+
+        <link rel="stylesheet" href="https://www.google.com">
+        <a href="https://www.google.com"></a>
+        <style>
+        body{
+    margin: 0%;
+    padding: 0%;
+    background:rgb(132, 161, 223);
+}
+.box{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,-50%);
+    overflow: hidden;
+}
+.box .b{
+    border-radius: 50%;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-top: 4px solid transparent !important;
+    border-bottom: 4px solid transparent !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%,-50%);
+    animation: ro 2s infinite;
+
+
+
+
+
+}
+.box .b1{
+    border-color: blue;
+    width: 120px;
+    height: 120px;
+
+}
+.box .b2{
+    border-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    animation-delay: 0.2s;
+}
+.box .b3{
+    border-color: blue;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.4s
+}
+.box .b4{
+    border-color: rgb(255, 255, 255);
+    width: 60px;
+    height: 60px;
+    animation-delay: 0.6s
+}
+@keyframes  ro {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+
+    }
+
+50%{
+    transform: translate(-50%,-50%) rotate(-180deg);
+
+}
+100%{
+    transform: translate(-50%,-50%) rotate(0deg);
+
+}
+
+
+}
+.search-box{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(219, 247, 247);
+    height: 20px;
+    border-radius: 30px;
+    padding: 4px;
+    
+
+
+}
+.search-box:hover > .search-txt{
+    width: 160px;
+    padding: 0 5px;
+
+
+}
+.search-box:hover > .search-btn{
+    background: blue;
+}
+.search-btn{
+    color: black;
+    float: right;
+    width: 40px;
+    height:px;
+    border-radius: 50%;
+    background: rgb(219, 247, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s
+
+
+
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 20px;
+    width: 0px;
+
+
+
+}
+.button{
+    width: 90px;
+    height: 30px;
+    background: blue;
+    float: right;
+    padding: 1;
+    color: white;
+    font-size: 16px;
+    border-radius: 10%;
+    border: blue;
+    position: absolute; 
+    left: 36%;
+    top: 80%;
+    
+    
+    
+    
+    
+}
+
+        </style>
+            <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+        <title>A.T.L.A.S doc</title>
+        <link href="https://www.google.com">
+        <link rel="stylesheet">
+     
+        
+    </head>
+
+    <body>
+      
+        
+        <div class="box">
+
+            <div class="b b1"></div>
+            <div class="b b2"></div>
+            <div class="b b3"></div>
+            <div class="b b4"></div>
+
+
+        </div>
+
+        <form id="userinput">
+        <div class="search-box">
+
+            
+            <input  class="search-txt" type="text" name="main.doc" placeholder="enter your body temp.">
+            <a class="search-btn" href="#"></a>
+            <i class="fas fa-search"></i>
+           
+            
+        </div>
+        </form>
+            
+        <div>
+                <button class="button" onclick="getinfo()">Enter</button>
+
+           </div>
+         
+
+     <script>
+         
+        function getinfo(){
+            var x = document.getElementById("userinput");
+            var y = x.elements["main.doc"].value;
+            if(y<=a){
+                alert("your body temperature is critically low, you should go to a doctor for consultation purpose.")
+            }
+            else if(y<b){
+                var sybth = window.speechSynthesis;
+                window.speechSynthesis.speak(speak1);
+                
+  
+            }
+            else if(y==b){
+                var synth = window.speechSynthesis;
+                window.speechSynthesis.speak(speak2);
+            }
+            
+            else if(y<=d){
+                var synthh = window.speechSynthesis;
+                window.speechSynthesis.speak(speak2);
+
+            }
+
+            else if(y<c){
+                var main = window.speechSynthesis;
+                window.speechSynthesis.speak(speak3);
+
+            }
+
+            else if(y==c){
+                var node = window.speechSynthesis;
+                window.speechSynthesis.speak(speak3);
+
+            }
+
+            else if(y>c){
+                var mainolaara = window.speechSynthesis;
+                window.speechSynthesis.speak(speak4);
+                alert("Extreme illness or fever spotted! better rush to a doctor.")
+
+            }
+
+            else{
+                alert("Enter valid body temperature, application couldnt figure out the temp.")
+            }
+
+
+            
+
+            }
+            
+            
+        
+       
+
+
+
+
+
+               
+     </script>
+       <script>
+            var speak1 = new SpeechSynthesisUtterance ("hello user, your body temperature is below thirty seven degree celsius, whic is not a big issue, but the normal, or average body temperature of an individual is thirty seven degree celsius. no common disesese or fever is found in a body temperature below the average point. you are well and fine.")
+            var speak2 = new SpeechSynthesisUtterance("hello there, it seems like your body temperature is near to the average human temperature, according to theory, you should not suffer from any distress nor fever, but if u feel so, the causes may be minor headache or a minor cold or illness, this could be due to some deficiency or lot of work during a day, i think thats it, thank you!!")
+            var speak3 = new SpeechSynthesisUtterance("hello!! your body temperature exceeds the safety limit, according to the calculations you are sick or ill right now, you may feel vomitting at times and most of the day you will remain drowsy, it is better to take rest, if the fever does not subside after one days rest, than probably you should visit a doctor, fever are caused by infections, These include: infections and infectious diseases, such as influenza, common cold, HIV, malaria, infectious mononucleosis, and gastroenteritis. take care.")
+            var speak4 = new SpeechSynthesisUtterance("hello user, your body temperature exceeds the last limit, you are in a serious trouble, rush to a doctor as soon as you can, an average humans body temperature should exceed the main limit, your temperature is above fourty two degree celsius, major problems may take place like nfections, including the flu, common cold, and pneumonia, some immunizations, such as diphtheria or tetanus, some inflammatory diseases, including rheumatoid arthritis and Crohn's diseases,blood clots,extreme sunburn and food poisoning, you are under serious conditions, consulting a doctor is very much necessary.")
+            var a = 30
+            var b = 37
+            var d = 39
+            var c = 42
+        </script>
+        
+
+
+    
+        
+
+    </body>
+</html>
